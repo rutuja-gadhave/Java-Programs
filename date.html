@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<TITLE>JAVASCRIPT</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE="javascript"  TYPE="text/javascript">
+var d=new Date();
+var a=d.getDay();
+var b=d.getHours();
+var c=d.getMinutes();
+var e=d.getSeconds();
+var x,y;
+switch(a)
+{
+	case 1:
+		x='Monday';
+		break;
+	case 2:
+		x='Tuesday';
+		break;
+	case 3:
+		x='Wednesday';
+		break;
+	case 4:
+		x='Thursday';
+		break;
+	case 5:
+		x='Friday';
+		break;
+	case 6:
+		x='Saturday';
+		break;
+	case 7:
+		x='Sunday';
+		break;
+}
+if(b>12)
+{
+	y='PM';
+}
+else
+{
+	y='AM';
+}
+document.write("Today  is : "+x+"<BR>Time : "+b+y+":"+c+":"+e);
+</SCRIPT>
+</BODY>
+
+</HTML>

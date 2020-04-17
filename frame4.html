@@ -1,0 +1,22 @@
+<HTML>
+<head>
+<script language="javascript" type="text/javascript">
+function change()
+{
+	window.frame1.document.open()
+	window.frame1.document.writeln('<html>')
+	window.frame1.document.writeln('<body>')
+	window.frame1.document.writeln('<form name="f1">')
+	window.frame1.document.writeln('<input name="web" type="button" value="click me">')
+	window.frame1.document.writeln('</form>')
+	window.frame1.document.writeln('</body>')
+	window.frame1.document.writeln('</html>')
+	window.frame1.document.close()
+}
+</script>
+</head>
+<frameset cols="50%,50%" onload="change()">
+<frame name="frame1" src="web1.html" border="0" frameborder="0">
+<frame name="frame2" src="web2.html">
+</frameset>
+</HTML>

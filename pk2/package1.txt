@@ -1,0 +1,17 @@
+package pk2;
+interface op2;
+{
+	public void acc2();
+}
+class  package1 implements op2
+{
+	public void acc2()
+	{
+		float price="5000";
+		String cpy="Redmi";
+	}
+	void show1()
+	{
+		System.out.println("Product price : "+price+"\tProduct brand : "+cpy);
+	}
+}
